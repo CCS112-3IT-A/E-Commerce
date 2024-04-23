@@ -3,7 +3,7 @@ import Product from './components/Product';
 import CartSummary from './components/CartSummary';
 import ViewCart from './components/ViewCart';
 
-function App() {
+function Shop() {
   const [cart, setCart] = useState([]);
 
   const addToCart = (product) => {
@@ -20,8 +20,8 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="Shop">
+      <header className="Shop-header">
         <h3>An E-commerce Product Page</h3>
         <CartSummary cart={cart} />
         <ViewCart cart={cart} removeFromCart={removeFromCart} />
@@ -31,4 +31,4 @@ function App() {
   );
 }
 
-export default App;
+export default Shop;
