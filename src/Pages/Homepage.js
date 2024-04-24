@@ -8,7 +8,7 @@ function HomePage() {
     <>
       <Navbar bg="dark" variant="dark" fixed="top" className="mb-5 justify-content-center">
         <Container>
-          <Navbar.Brand href="#" className="mx-auto">ElectroMart</Navbar.Brand>
+          <Link to="Homepage.js" className="navbar-brand mx-auto">ElectroMart</Link> {/* Make the header clickable */}
         </Container>
       </Navbar>
 
