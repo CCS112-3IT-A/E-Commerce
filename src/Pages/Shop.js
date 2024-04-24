@@ -1,7 +1,8 @@
+// Shop.js
 import React, { useState } from 'react';
-import Product from './components/Product';
-import CartSummary from './components/CartSummary';
-import ViewCart from './components/ViewCart';
+import Product from '../components/Product';
+import CartSummary from '../components/CartSummary';
+import ViewCart from '../components/ViewCart';
 
 function Shop() {
   const [cart, setCart] = useState([]);
@@ -11,12 +12,8 @@ function Shop() {
   };
 
   const removeFromCart = (productToRemove) => {
-    const indexToRemove = cart.findIndex((item) => item.name === productToRemove.name);
-    if (indexToRemove !== -1) {
-      const updatedCart = [...cart];
-      updatedCart.splice(indexToRemove, 1);
-      setCart(updatedCart);
-    }
+    const updatedCart = cart.filter(item => item.id !== productToRemove.id);
+    setCart(updatedCart);
   };
 
   return (

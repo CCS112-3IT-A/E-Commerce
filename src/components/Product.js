@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import Products from './ProductInformation';
-import AddToCart from './AddToCart';
+import ProductInformation from './ProductInformation'; // Corrected import path
+import AddToCart from './AddToCart'; // Corrected import path
 import { Card, Button, Col, Row } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 
 function Product({ addToCart }) {
   const [products] = useState([
