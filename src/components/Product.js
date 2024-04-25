@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import Products from './ProductInformation';
-import AddToCart from './AddToCart';
 import { Card, Button, Col, Row } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
